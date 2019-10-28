@@ -1,0 +1,37 @@
+{
+	"manifest_version": 2,
+	"name": "Remove Affiliate Links",
+	"description": "Removes Amazon affiliate codes from links",
+	"version": "0.1",
+	"minimum_chrome_version": "70",
+
+
+	"permissions": [
+		"webRequest",
+		"webRequestBlocking",
+		"*://*.amazon.ae/*",
+		"*://*.amazon.at/*",
+		"*://*.amazon.ca/*",
+		"*://*.amazon.cn/*",
+		"*://*.amazon.co.jp/*",
+		"*://*.amazon.co.uk/*",
+		"*://*.amazon.com.au/*",
+		"*://*.amazon.com.br/*",
+		"*://*.amazon.com.mx/*",
+		"*://*.amazon.com.sg/*",
+		"*://*.amazon.com.tr/*",
+		"*://*.amazon.com/*",
+		"*://*.amazon.de/*",
+		"*://*.amazon.es/*",
+		"*://*.amazon.fr/*",
+		"*://*.amazon.ie/*",
+		"*://*.amazon.in/*",
+		"*://*.amazon.it/*",
+		"*://*.amazon.nl/*"
+	],
+
+	"background": {
+		"scripts": ["backgroundscript.js"],
+		"persistent": true
+	}
+}
