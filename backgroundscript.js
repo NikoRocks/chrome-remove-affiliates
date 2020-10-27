@@ -26,6 +26,7 @@ function sanitizeURL(urlString) {
 	}
 	searchParams.delete('tag');
 	searchParams.delete('ascsubtag');
+  // linkCode, creative, creativeASIN, camp
 	return { match, url: url.toString() };
 }
 
